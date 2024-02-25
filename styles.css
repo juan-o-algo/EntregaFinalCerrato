@@ -1,0 +1,593 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif !important;
+    background-color: #DFF2D6;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr auto 20px;
+    grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    grid-area: main ;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 90%;
+    width: auto;
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    font-size: small;
+    color: #747c60;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+footer div {
+    height: 20px;
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif !important;
+}
+
+#buscador {
+    font-family: 'Titillium Web', sans-serif !important;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif !important;
+    text-align: left;
+    color: #40492b;
+    overflow: visible;
+}
+
+.encabezado{
+    background-color: #B0DF9A;
+    color: #40492b;
+    width: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    text-align: center;
+    height: 150px;
+}
+
+#logo {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 80px;
+}
+
+#credenciales {
+    display: flex;
+    flex-direction: column;
+}
+
+#login {
+    font-family: 'Titillium Web', sans-serif !important;
+    font-size: small;    
+    display: flex;
+    order: 3;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 45px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.dropdown {
+    display: none;
+}
+
+#iconoYMenu {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+ul.botones {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.boton {
+background-color: #50AA34;
+height: 50px;
+width: 170px;
+border: 1px solid #DFF2D6;
+margin: 10px 10px;
+}
+
+#contenedorPrincipal {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-color: #F3FFED;
+    width: 100%;
+    height: auto;
+}
+
+#contenidoAboutUs {
+    display: flex;
+    gap: 50px;
+}
+
+#productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.producto {
+    border: 3px solid #B0DF9A;
+    border-radius: 8px;
+    height: 250px;
+}
+
+.categoria {
+    color: #DFF2D6;
+    text-align: center;
+    background-color: rgba(80, 170, 52, 0.8);
+    width: 120px;
+    margin-left: 125px;
+    position: relative;
+    border-radius: 8px;
+    height: 40px;
+    bottom: 150px;
+    font-size: 24px;
+}
+
+.textoPues {
+height: 400px;
+width: 300px;
+}
+
+.fotuki {
+    height: 250px;
+    width: 350px;  
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#buscadorPorCategoria {
+    background-color: #50AA34;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    width: 250px;
+    min-width: 250px;
+    margin-top: 25px;
+    margin: 20px 20px;
+    border: 20px solid #B0DF9A;
+}
+
+.cuadritoYContenido {
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+}
+
+.cuadroDelTitulo {
+    height: 60px;
+    width: 570px;
+    background-color: #B0DF9A;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuadrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 300px;
+    width: 100%;
+}
+
+.titulo {
+    margin-left: 20px;
+}
+
+.acaLePonesCosas {
+    border: 7px solid #DFF2D6
+}
+
+#buscador {
+margin-top: 30px;
+}
+
+.botonesDelCoso {
+    margin-top: 15px;
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+nav {
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 10px;
+}
+
+#carritoYCheckout {
+    background-color: #DFF2D6;
+    height: 550px;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#carrito {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#checkout {
+display: flex;
+flex-direction: row;
+justify-self: center;
+}
+
+#botonCheckout {
+background-color: #50AA34;
+height: 50px;
+width: 170px;
+border: 3px solid #F3FFED;
+border-radius: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#formularioObligatorio {
+    background-color: #DFF2D6;
+    height: 550px;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    justify-content: space-around;
+}
+
+#mensajito {
+    height: 400px;
+    width: 600px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#email {
+    width: 400px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#botonMensaje {
+    background-color: #50AA34;
+height: 50px;
+width: 170px;
+border: 3px solid #F3FFED;
+border-radius: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #F3FFED;
+font-family: 'Titillium Web', sans-serif;
+font-size: large;
+}
+
+header a {
+    text-decoration: none;
+    padding: 10px 20px;
+    position: relative;
+    top: 14px;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    height: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #FAFAFA;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+@media (max-width: 480px) {
+
+    * {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        overflow-y: scroll;
+    }
+
+    body {
+        font-family: 'Bebas Neue', sans-serif !important;
+        background-color: #DFF2D6;
+        display: grid;
+        height: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr auto 20px;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer"
+        ;
+    }
+
+    main {
+        margin: unset;
+        height: 100%;
+    }
+
+    #buscadorPorCategoria {
+        display: none;
+    }
+
+    header {
+        width: auto;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        overflow: visible;
+    }
+
+    .encabezado {
+        justify-content: space-around;
+        align-items: flex-end;
+        flex-direction: row;
+        text-align: center;
+        flex-wrap: nowrap;
+        margin: unset;
+        padding: unset;
+        margin-right: unset;
+        width: 100%;
+        overflow: visible;
+    }
+
+    .boton {
+        display: none;
+        background-color: #50AA34;
+        height: 50px;
+        width: 70px;
+        border: 1px solid #DFF2D6;
+        margin: 5px 5px;
+        }
+    
+    .boton a {
+        font-size: 14px;
+    }
+
+    #videito {
+        width: 100vw;
+        height: 250px;
+        margin: unset;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: unset;
+    }
+
+    #contenedorPrincipal {
+        margin: unset;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .cuadroDelTitulo {
+        height: 60px;
+        width: 100%;
+        background-color: #B0DF9A;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-top: unset;
+        margin-bottom: unset;
+        overflow: visible;
+    }
+    
+    .titulo {
+        overflow: hidden;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        position: unset;
+    }
+
+    #contenido {
+        height: auto;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .cuadritoYContenido {
+        width: 500px;
+        overflow: visible;
+    }
+
+    .dropdown {
+        display: unset;
+        margin-bottom: 20px;
+        height: auto;
+        overflow: visible;
+        position: relative;
+    }
+
+    #logo {
+        margin-bottom: unset;
+        overflow: unset;
+    }
+
+    #iconoYMenu {
+        height: auto;
+        width: auto;
+        align-items: center;
+        overflow: visible;
+        
+    }
+
+    #icono {
+        height: auto;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 20px;
+        overflow: unset;
+    }
+
+    .btn:hover {
+        background-color: #50AA34;
+        border: #F3FFED;
+        color: #F3FFED;
+    }
+
+    header a {
+        text-decoration: none;
+        padding: unset;
+        top: 14px;
+        overflow: visible;
+    }
+
+    .dropdown-item {
+        overflow: visible;
+        position: relative;
+        color: #F3FFED;
+
+        font-size: larger;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dropdown-menu {
+        overflow: visible;
+        height: auto;
+
+    }
+
+    header li {
+        overflow: unset;
+        background-color: #50AA34;
+        opacity: 0.9;
+    }
+
+    header ul {
+        overflow: unset;
+        background-color: #50AA34 !important;
+        opacity: 0.9;
+    }
+    
+    .btn.show {
+        background-color: #50AA34;
+        border-color: #B0DF9A;
+        color: #F3FFED;
+    }
+
+    .btn.active {
+        background-color: #50AA34;
+        border-color: #B0DF9A;
+        color: #F3FFED;
+    }
+
+    .btn {
+        background-color: #50AA34;
+        border-color: #B0DF9A;
+        color: #F3FFED;  
+    }
+
+    .cuadrito {
+        flex-direction: column;
+        overflow: visible;
+        height: auto;
+        justify-content: center;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .textoPues {
+        height: auto;
+        width: 90vw;
+        margin-top: 16px;
+    }
+
+    .fotuki {
+        width: 90vw;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .divFotuki {
+        width: 100%;
+    }
+
+    .producto {
+        overflow: hidden;
+        height: 250px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .producto a {
+        height: 250px;
+    }
+
+    .producto a .fotuki {
+        margin-top: unset;
+    }
+}
+
