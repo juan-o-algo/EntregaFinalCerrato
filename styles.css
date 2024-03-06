@@ -38,14 +38,7 @@ footer {
     text-align: right;
     font-size: small;
     color: #747c60;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-footer div {
-    height: 20px;
+    text-align: center;
 }
 
 p {
@@ -198,10 +191,14 @@ margin: 10px 10px;
 }
 
 .categoria {
-    color: #DFF2D6;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
     background-color: rgba(80, 170, 52, 0.8);
-    width: 120px;
+    width: 150px;
+    height: 70px;
     border-radius: 8px;
     font-size: 24px;
     margin-bottom: 0px;
@@ -237,7 +234,7 @@ width: 400px;
 .cuadritoYContenido {
     display: flex;
     flex-direction: column-reverse;
-    width: auto;
+    width: 100%;
 }
 
 .cuadroDelTitulo {
@@ -379,12 +376,11 @@ a {
     font-family: 'Titillium Web', sans-serif;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 1024px) {
 
     * {
         margin: 0px 0px 0px 0px;
         padding: 0px 0px 0px 0px;
-        overflow-y: scroll;
     }
 
     body {
@@ -445,12 +441,10 @@ a {
     }
 
     #videito {
-        width: 100vw;
-        height: 250px;
-        margin: unset;
-        margin-top: 50px;
-        margin-bottom: 200px;
-        padding: unset;
+        width: auto;
+        height: 500px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     #contenedorPrincipal {
@@ -478,17 +472,6 @@ a {
         overflow: hidden;
     }
 
-    footer {
-        display: flex;
-        justify-content: center;
-        position: unset;
-        margin-bottom: unset;
-    }
-
-    footer p {
-        margin-bottom: unset;
-    }
-
     #contenido {
         height: auto;
         flex-direction: column;
@@ -496,7 +479,7 @@ a {
     }
 
     .cuadritoYContenido {
-        width: 500px;
+        width: 100%;
         overflow: visible;
     }
 
@@ -596,6 +579,11 @@ a {
         justify-content: center;
         width: 100%;
         margin-top: 20px;
+    }
+    .cuadroDelTitulo {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .textoPues {
