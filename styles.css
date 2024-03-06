@@ -153,7 +153,48 @@ margin: 10px 10px;
 .producto {
     border: 3px solid #B0DF9A;
     border-radius: 8px;
-    height: 250px;
+    height: 256px;
+    width: 350px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#seeds {
+    background-image: url("https://m.media-amazon.com/images/I/81Bhhy3-jVL._AC_UF894,1000_QL80_.jpg");
+    background-size: cover;
+}
+
+#tools { 
+    background-image: url("https://cdn.mos.cms.futurecdn.net/Rx63edvSZCZ9uSg7egSDRU.jpg");
+    background-size: cover;
+}
+
+#pots {
+    background-image: url("https://m.media-amazon.com/images/I/71WffRxu65L._AC_UF894,1000_QL80_.jpg");
+    background-size: cover;
+}
+
+#soil {
+    background-image: url("https://joegardener.com/wp-content/uploads/2022/11/2021-07-15-15.10.52-708X466.jpg");
+    background-size: cover;
+}
+
+#nutrients {
+    background-image: url("https://hydrobuilder.com/wp/wp-content/uploads/Best_Plant_Nutrients.png");
+    background-size: cover;
+}
+
+#pesticides {
+    background-image: url("https://water.unl.edu/images/news/Pesticides%2C_S._Browning%2C_resized.JPG");
+    background-size: cover;
 }
 
 .categoria {
@@ -161,17 +202,14 @@ margin: 10px 10px;
     text-align: center;
     background-color: rgba(80, 170, 52, 0.8);
     width: 120px;
-    margin-left: 125px;
-    position: relative;
     border-radius: 8px;
-    height: 40px;
-    bottom: 150px;
     font-size: 24px;
+    margin-bottom: 0px;
 }
 
 .textoPues {
-height: 400px;
-width: 300px;
+height: auto;
+width: 400px;
 }
 
 .fotuki {
@@ -224,7 +262,8 @@ width: 300px;
     justify-content: space-evenly;
     margin-right: 20px;
     margin-left: 20px;
-    height: 300px;
+    margin-bottom: 20px;
+    height: 250px;
     width: 100%;
 }
 
@@ -325,7 +364,7 @@ header a {
     text-decoration: none;
     padding: 10px 20px;
     position: relative;
-    top: 14px;
+    top: 12px;
 }
 
 header ul {
@@ -410,7 +449,7 @@ a {
         height: 250px;
         margin: unset;
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 200px;
         padding: unset;
     }
 
@@ -443,6 +482,11 @@ a {
         display: flex;
         justify-content: center;
         position: unset;
+        margin-bottom: unset;
+    }
+
+    footer p {
+        margin-bottom: unset;
     }
 
     #contenido {
@@ -461,7 +505,6 @@ a {
         margin-bottom: 20px;
         height: auto;
         overflow: visible;
-        position: relative;
     }
 
     #logo {
@@ -503,7 +546,6 @@ a {
 
     .dropdown-item {
         overflow: visible;
-        position: relative;
         color: #F3FFED;
 
         font-size: larger;
@@ -550,11 +592,10 @@ a {
 
     .cuadrito {
         flex-direction: column;
-        overflow: visible;
-        height: auto;
+        height: fit-content;
         justify-content: center;
         width: 100%;
-        overflow-x: hidden;
+        margin-top: 20px;
     }
 
     .textoPues {
@@ -574,10 +615,10 @@ a {
     }
 
     .producto {
-        overflow: hidden;
-        height: 250px;
+        height: auto;
         width: auto;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -587,7 +628,49 @@ a {
     }
 
     .producto a .fotuki {
+        margin-bottom: unset;
         margin-top: unset;
+        height: min-content;
+    }
+
+    #carritoYCheckout {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: auto;
+        width: auto;
+    }
+    
+    #carrito {
+        margin-top: 20px;
+    }
+    
+    #checkout {
+        margin-bottom: 20px;
+    }
+    
+    #formularioObligatorio {
+        background-color: #DFF2D6;
+        height: auto;
+        width: 100vw;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    
+    #mensajito {
+        height: auto;
+        width: 90vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #email {
+        width: 80vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #botonMensaje {
+        margin-bottom: 20px;
     }
 }
 
