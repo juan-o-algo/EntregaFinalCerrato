@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="description"
-        content="¡Bienvenidos a Gaia! Todo lo que necesitas para hacer de tu jardín una huerta de forma fácil y divertida.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaia | Inicio</title>
+    <meta name="description"
+        content="Elige los productos de jardinería que más te gusten para tu huerta y desde Gaia te los enviamos a tu casa.">
+    <title>Gaia | Productos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
@@ -22,18 +22,18 @@
     <header>
         <div class="encabezado">
             <div id="iconoYMenu">
-                <div id="icono"><a href="index.html"><img id="logo" src="./recursos/logo-o-algo-asi.png" alt="logo"></a>
-                </div>
+                <div id="icono"><a href="/index.html"><img id="logo" src="../recursos/logo-o-algo-asi.png"
+                            alt="logo"></a></div>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="index.html">Inicio</a></li>
-                        <li><a class="dropdown-item" href="./paginas/sobrenosotros.html">Sobre Nosotros</a></li>
-                        <li><a class="dropdown-item" href="./paginas/productos.html">Productos</a></li>
-                        <li><a class="dropdown-item" href="/paginas/carrito.html">Carrito</a></li>
-                        <li><a class="dropdown-item" href="./paginas/contacto.html">Contacto</a></li>
+                        <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                        <li><a class="dropdown-item" href="../paginas/sobrenosotros.html">Sobre Nosotros</a></li>
+                        <li><a class="dropdown-item" href="../paginas/productos.html">Productos</a></li>
+                        <li><a class="dropdown-item" href="../paginas/carrito.html">Carrito</a></li>
+                        <li><a class="dropdown-item" href="../paginas/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,23 +44,22 @@
                 </div>
                 <div><input class="acaLePonesCosas" type="submit" value="Login"></div>
             </div>
-
             <nav>
                 <ul class="botones">
                     <li>
-                        <div class="boton"><a href="index.html">Inicio</a></div>
+                        <div class="boton"><a href="../index.html">Inicio</a></div>
                     </li>
                     <li>
-                        <div class="boton"><a href="./paginas/sobrenosotros.html">Sobre Nosotros</a></div>
+                        <div class="boton"><a href="sobrenosotros.html">Sobre Nosotros</a></div>
                     </li>
                     <li>
-                        <div class="boton"><a href="./paginas/productos.html">Productos</a></div>
+                        <div class="boton"><a href="productos.html">Productos</a></div>
                     </li>
                     <li>
-                        <div class="boton"><a href="./paginas/carrito.html">Carrito</a></div>
+                        <div class="boton"><a href="carrito.html">Carrito</a></div>
                     </li>
                     <li>
-                        <div class="boton"><a href="./paginas/contacto.html">Contacto</a></div>
+                        <div class="boton"><a href="contacto.html">Contacto</a></div>
                     </li>
                 </ul>
             </nav>
@@ -70,15 +69,44 @@
     <main>
         <div id="contenedorPrincipal">
             <div class="cuadritoYContenido">
-                <div id="contenido">
-                    <iframe id="videito" width="860" height="515"
-                        src="https://www.youtube.com/embed/seLEvrZ6_6w?si=qeGP-bC3gMmQZdyd&amp;start=163&cc_load_policy=0&autoplay=1"
-                        title="Garden ASMR" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                <div id="productos">
+                    <div class="cuadrito">
+                        <div class="producto" id="seeds">
+                            <a href="">
+                                <p class="categoria">Semillas</p>
+                            </a>
+                        </div>
+                        <div class="producto" id="tools">
+                            <a href="">
+                                <p class="categoria">Herramientas</p>
+                            </a>
+                        </div>
+                        <div class="producto" id="pots">
+                            <a href="">
+                                <p class="categoria">Macetas</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cuadrito">
+                        <div class="producto" id="soil">
+                            <a href="">
+                                <p class="categoria">Tierra</p>
+                            </a>
+                        </div>
+                        <div class="producto" id="nutrients">
+                            <a href="">
+                                <p class="categoria">Suplementos</p>
+                            </a>
+                        </div>
+                        <div class="producto" id="pesticides">
+                            <a href="">
+                                <p class="categoria">Pesticidas</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="cuadroDelTitulo">
-                    <h1 class="titulo">Inicio</h1>
+                    <h1 class="titulo">Productos</h1>
                 </div>
             </div>
             <div id="buscadorPorCategoria">
@@ -102,6 +130,7 @@
                     </ul>
                 </nav>
             </div>
+
         </div>
     </main>
     <footer>
