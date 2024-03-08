@@ -141,24 +141,142 @@ body main #contenedorPrincipal .cuadritoYContenido .cuadrito {
   justify-content: space-evenly;
   margin-right: 20px;
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   height: 250px;
   width: 100%;
 }
-body main #contenedorPrincipal .cuadritoYContenido .cuadrito #contenido {
-  display: flex;
-  flex-direction: column;
-}
-body main #contenedorPrincipal .cuadritoYContenido .cuadrito #contenido #videito {
+body main #contenedorPrincipal .cuadritoYContenido .cuadrito #videito {
   width: auto;
   height: 500px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-body main #contenedorPrincipal .cuadritoYContenido #buscadorPorCategoria {
-  display: none;
+body main #contenedorPrincipal .cuadritoYContenido .cuadrito .fotuki {
+  height: 250px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-body main #contenedorPrincipal #buscadorPorCategoria {
+body main #contenedorPrincipal .cuadritoYContenido .cuadrito .textoPues {
+  height: auto;
+  width: 400px;
+}
+body main #contenedorPrincipal .cuadritoYContenido .cuadrito .categoria {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(80, 170, 52, 0.8);
+  width: 150px;
+  height: 70px;
+  border-radius: 8px;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+body main #contenedorPrincipal .cuadritoYContenido .cuadrito .producto {
+  border: 3px solid #B0DF9A;
+  border-radius: 8px;
+  height: 256px;
+  width: 350px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #contenedorPrincipal .cuadritoYContenido .cuadrito .producto a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main #contenedorPrincipal .cuadritoYContenido .cuadrito #seeds {
+  background-image: url("https://m.media-amazon.com/images/I/81Bhhy3-jVL._AC_UF894,1000_QL80_.jpg");
+  background-size: cover;
+}
+body main #contenedorPrincipal .cuadritoYContenido .cuadrito #tools {
+  background-image: url("https://cdn.mos.cms.futurecdn.net/Rx63edvSZCZ9uSg7egSDRU.jpg");
+  background-size: cover;
+}
+body main #contenedorPrincipal .cuadritoYContenido .cuadrito #pots {
+  background-image: url("https://m.media-amazon.com/images/I/71WffRxu65L._AC_UF894,1000_QL80_.jpg");
+  background-size: cover;
+}
+body main #contenedorPrincipal .cuadritoYContenido .cuadrito #soil {
+  background-image: url("https://joegardener.com/wp-content/uploads/2022/11/2021-07-15-15.10.52-708X466.jpg");
+  background-size: cover;
+}
+body main #contenedorPrincipal .cuadritoYContenido .cuadrito #nutrients {
+  background-image: url("https://hydrobuilder.com/wp/wp-content/uploads/Best_Plant_Nutrients.png");
+  background-size: cover;
+}
+body main #contenedorPrincipal .cuadritoYContenido .cuadrito #pesticides {
+  background-image: url("https://water.unl.edu/images/news/Pesticides%2C_S._Browning%2C_resized.JPG");
+  background-size: cover;
+}
+body main #contenedorPrincipal .cuadritoYContenido #carritoYCheckout {
+  background-color: #DFF2D6;
+  height: 550px;
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+body main #contenedorPrincipal .cuadritoYContenido #carritoYCheckout #carrito {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body main #contenedorPrincipal .cuadritoYContenido #carritoYCheckout #checkout {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+}
+body main #contenedorPrincipal .cuadritoYContenido #carritoYCheckout #checkout #botonCheckout {
+  background-color: #50AA34;
+  height: 50px;
+  width: 170px;
+  border: 3px solid #F3FFED;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #contenedorPrincipal .cuadritoYContenido #formularioObligatorio {
+  background-color: #DFF2D6;
+  height: 550px;
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  justify-content: space-around;
+}
+body main #contenedorPrincipal .cuadritoYContenido #formularioObligatorio #mensajito {
+  height: 400px;
+  width: 600px;
+  font-family: "Titillium Web", sans-serif;
+}
+body main #contenedorPrincipal .cuadritoYContenido #formularioObligatorio #email {
+  width: 400px;
+  font-family: "Titillium Web", sans-serif;
+}
+body main #contenedorPrincipal .cuadritoYContenido #formularioObligatorio #botonMensaje {
+  background-color: #50AA34;
+  height: 50px;
+  width: 170px;
+  border: 3px solid #F3FFED;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F3FFED;
+  font-family: "Titillium Web", sans-serif;
+  font-size: large;
+}
+body main #buscadorPorCategoria {
   background-color: #50AA34;
   display: flex;
   flex-direction: column;
@@ -171,15 +289,16 @@ body main #contenedorPrincipal #buscadorPorCategoria {
   margin: 20px 20px;
   border: 20px solid #B0DF9A;
 }
-body main #contenedorPrincipal #buscadorPorCategoria #buscador {
+body main #buscadorPorCategoria #buscador {
   margin-top: 30px;
 }
-body main #contenedorPrincipal #buscadorPorCategoria .botonesNavLateral {
+body main #buscadorPorCategoria .botonesNavLateral {
   margin-top: 15px;
   margin-right: 30px;
   list-style-type: none;
 }
-body footer {
+
+footer {
   grid-area: footer;
   width: 100%;
   height: 100%;
@@ -190,30 +309,31 @@ body footer {
   text-align: center;
   justify-content: flex-start;
 }
-body footer p {
+footer p {
   margin: unset;
 }
+
 @media (max-width: 1024px) {
-  body body {
+  body {
     grid-template-columns: auto;
     grid-template-rows: 1fr auto 20px;
     grid-template-areas: "header" "main" "footer";
   }
-  body main {
+  main {
     margin: unset;
     height: 100%;
   }
-  body #buscadorPorCategoria {
+  #buscadorPorCategoria {
     display: none;
   }
-  body header {
+  header {
     width: auto;
     display: flex;
     align-items: center;
     position: sticky;
     overflow: visible;
   }
-  body header .encabezado {
+  header .encabezado {
     justify-content: space-around;
     align-items: flex-end;
     flex-direction: row;
@@ -225,16 +345,16 @@ body footer p {
     width: 100%;
     overflow: visible;
   }
-  body header .encabezado #logo {
+  header .encabezado #logo {
     height: 70px;
     width: 70px;
     margin-bottom: 80px;
   }
-  body header .encabezado #credenciales {
+  header .encabezado #credenciales {
     display: flex;
     flex-direction: column;
   }
-  body header .encabezado #login {
+  header .encabezado #login {
     font-family: "Titillium Web", sans-serif !important;
     font-size: small;
     display: flex;
@@ -246,21 +366,21 @@ body footer p {
     margin-right: 20px;
     margin-left: 20px;
   }
-  body .dropdown {
+  .dropdown {
     display: none;
   }
-  body #iconoYMenu {
+  #iconoYMenu {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
   }
-  body ul.botones {
+  ul.botones {
     display: flex;
     flex-direction: row;
     height: 50px;
     margin-bottom: 20px;
   }
-  body .boton {
+  .boton {
     display: none;
     background-color: #50AA34;
     height: 50px;
@@ -268,16 +388,16 @@ body footer p {
     border: 1px solid #DFF2D6;
     margin: 5px 5px;
   }
-  body .boton a {
+  .boton a {
     font-size: 14px;
   }
-  body #videito {
+  #videito {
     width: auto;
     height: 500px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  body #contenedorPrincipal {
+  #contenedorPrincipal {
     margin: unset;
     width: 100%;
     height: 100%;
@@ -285,7 +405,7 @@ body footer p {
     justify-content: center;
     overflow-x: hidden;
   }
-  body .cuadroDelTitulo {
+  .cuadroDelTitulo {
     height: 60px;
     width: 100%;
     background-color: #B0DF9A;
@@ -296,31 +416,31 @@ body footer p {
     margin-bottom: unset;
     overflow: visible;
   }
-  body .titulo {
+  .titulo {
     overflow: hidden;
   }
-  body #contenido {
+  #contenido {
     height: auto;
     flex-direction: column;
     overflow-x: hidden;
   }
-  body .dropdown {
+  .dropdown {
     display: unset;
     margin-bottom: 20px;
     height: auto;
     overflow: visible;
   }
-  body #logo {
+  #logo {
     margin-bottom: unset;
     overflow: unset;
   }
-  body #iconoYMenu {
+  #iconoYMenu {
     height: auto;
     width: auto;
     align-items: center;
     overflow: visible;
   }
-  body #icono {
+  #icono {
     height: auto;
     width: auto;
     display: flex;
@@ -330,17 +450,17 @@ body footer p {
     margin-bottom: 20px;
     overflow: unset;
   }
-  body .btn:hover {
+  .btn:hover {
     background-color: #50AA34;
     border: #F3FFED;
     color: #F3FFED;
   }
-  body header a {
+  header a {
     padding: unset;
     top: 14px;
     overflow: visible;
   }
-  body .dropdown-item {
+  .dropdown-item {
     overflow: visible;
     color: #F3FFED;
     font-size: larger;
@@ -348,36 +468,36 @@ body footer p {
     display: flex;
     justify-content: center;
   }
-  body .dropdown-menu {
+  .dropdown-menu {
     overflow: visible;
     height: auto;
   }
-  body header li {
+  header li {
     overflow: unset;
     background-color: #50AA34;
     opacity: 0.9;
   }
-  body header ul {
+  header ul {
     overflow: unset;
     background-color: #50AA34 !important;
     opacity: 0.9;
   }
-  body .btn.show {
+  .btn.show {
     background-color: #50AA34;
     border-color: #B0DF9A;
     color: #F3FFED;
   }
-  body .btn.active {
+  .btn.active {
     background-color: #50AA34;
     border-color: #B0DF9A;
     color: #F3FFED;
   }
-  body .btn {
+  .btn {
     background-color: #50AA34;
     border-color: #B0DF9A;
     color: #F3FFED;
   }
-  body .cuadrito {
+  .cuadrito {
     flex-direction: column;
     height: -moz-fit-content;
     height: fit-content;
@@ -385,25 +505,25 @@ body footer p {
     width: 100%;
     margin-top: 20px;
   }
-  body .cuadroDelTitulo {
+  .cuadroDelTitulo {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  body .textoPues {
+  .textoPues {
     height: auto;
     width: 90vw;
     margin-top: 16px;
   }
-  body .fotuki {
+  .fotuki {
     width: 90vw;
     margin-top: 16px;
     margin-bottom: 16px;
   }
-  body .divFotuki {
+  .divFotuki {
     width: 100%;
   }
-  body .producto {
+  .producto {
     height: auto;
     width: auto;
     display: flex;
@@ -411,47 +531,47 @@ body footer p {
     align-items: center;
     justify-content: center;
   }
-  body .producto a {
+  .producto a {
     height: 250px;
     color: white;
   }
-  body .producto a .fotuki {
+  .producto a .fotuki {
     margin-bottom: unset;
     margin-top: unset;
     height: -moz-min-content;
     height: min-content;
   }
-  body #carritoYCheckout {
+  #carritoYCheckout {
     margin-top: 20px;
     margin-bottom: 20px;
     height: auto;
     width: auto;
   }
-  body #carritoYCheckout #carrito {
+  #carritoYCheckout #carrito {
     margin-top: 20px;
   }
-  body #carritoYCheckout #checkout {
+  #carritoYCheckout #checkout {
     margin-bottom: 20px;
   }
-  body #formularioObligatorio {
+  #formularioObligatorio {
     background-color: #DFF2D6;
     height: auto;
     width: 100vw;
     margin-top: 20px;
     margin-bottom: 60px;
   }
-  body #formularioObligatorio #mensajito {
+  #formularioObligatorio #mensajito {
     height: auto;
     width: 90vw;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  body #formularioObligatorio #email {
+  #formularioObligatorio #email {
     width: 80vw;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  body #formularioObligatorio #botonMensaje {
+  #formularioObligatorio #botonMensaje {
     margin-bottom: 20px;
   }
 }/*# sourceMappingURL=main.css.map */

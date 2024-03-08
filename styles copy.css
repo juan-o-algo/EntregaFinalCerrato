@@ -36,93 +36,6 @@ margin: 10px 10px;
     gap: 50px;
 }
 
-#productos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-.producto {
-    border: 3px solid #B0DF9A;
-    border-radius: 8px;
-    height: 256px;
-    width: 350px;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.producto a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#seeds {
-    background-image: url("https://m.media-amazon.com/images/I/81Bhhy3-jVL._AC_UF894,1000_QL80_.jpg");
-    background-size: cover;
-}
-
-#tools { 
-    background-image: url("https://cdn.mos.cms.futurecdn.net/Rx63edvSZCZ9uSg7egSDRU.jpg");
-    background-size: cover;
-}
-
-#pots {
-    background-image: url("https://m.media-amazon.com/images/I/71WffRxu65L._AC_UF894,1000_QL80_.jpg");
-    background-size: cover;
-}
-
-#soil {
-    background-image: url("https://joegardener.com/wp-content/uploads/2022/11/2021-07-15-15.10.52-708X466.jpg");
-    background-size: cover;
-}
-
-#nutrients {
-    background-image: url("https://hydrobuilder.com/wp/wp-content/uploads/Best_Plant_Nutrients.png");
-    background-size: cover;
-}
-
-#pesticides {
-    background-image: url("https://water.unl.edu/images/news/Pesticides%2C_S._Browning%2C_resized.JPG");
-    background-size: cover;
-}
-
-.categoria {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    background-color: rgba(80, 170, 52, 0.8);
-    width: 150px;
-    height: 70px;
-    border-radius: 8px;
-    font-size: 24px;
-    margin-bottom: 0px;
-}
-
-.textoPues {
-height: auto;
-width: 400px;
-}
-
-.fotuki {
-    height: 250px;
-    width: 350px;  
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-}
-
-
-.botonesNavLateral {
-    margin-top: 15px;
-    margin-right: 30px;
-    list-style-type: none;
-}
 
 nav {
     font-family: 'Titillium Web', sans-serif;
@@ -139,29 +52,6 @@ nav {
     justify-content: space-around;
 }
 
-#carrito {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#checkout {
-display: flex;
-flex-direction: row;
-justify-self: center;
-}
-
-#botonCheckout {
-background-color: #50AA34;
-height: 50px;
-width: 170px;
-border: 3px solid #F3FFED;
-border-radius: 8px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
 
 #formularioObligatorio {
     background-color: #DFF2D6;
@@ -172,7 +62,7 @@ align-items: center;
     align-items: center;
     justify-content: stretch;
     justify-content: space-around;
-}
+
 
 #mensajito {
     height: 400px;
@@ -198,7 +88,7 @@ color: #F3FFED;
 font-family: 'Titillium Web', sans-serif;
 font-size: large;
 }
-
+}
 header a {
     text-decoration: none;
     padding: 10px 20px;
