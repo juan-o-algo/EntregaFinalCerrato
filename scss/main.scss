@@ -194,7 +194,7 @@ body {
         justify-content: space-evenly;
         align-items: center;
         height: auto;
-        width: 250px;
+        width: auto;
         min-width: 250px;
         margin-top: 25px;
         margin: 20px 20px;
@@ -282,6 +282,10 @@ body {
           }
         }
 
+        .cuadritoConOops {
+          height: auto;
+        }
+
         .video-container {
           @include media-query {
             width: 100vw;
@@ -338,7 +342,18 @@ body {
           border-radius: 8px;
           font-size: 24px;
           margin-bottom: 0px;
+          transition: all 0.5s ease;
         }
+
+          .categoria:hover {
+            transform: scale(1.5, 1.5);
+          }
+
+          .categoria:active {
+            transform: scale(0.5, 0.5);
+            transition: all 0.1s ease;
+          }
+        
 
         .producto {
           border: 3px solid #B0DF9A;
@@ -348,6 +363,7 @@ body {
           display: flex;
           align-items: center;
           justify-content: center;
+          background-size: cover;
 
           a {
             display: flex;
@@ -358,32 +374,30 @@ body {
 
         #seeds {
           background-image: url("https://m.media-amazon.com/images/I/81Bhhy3-jVL._AC_UF894,1000_QL80_.jpg");
-          background-size: cover;
         }
 
         #tools {
           background-image: url("https://cdn.mos.cms.futurecdn.net/Rx63edvSZCZ9uSg7egSDRU.jpg");
-          background-size: cover;
         }
 
         #pots {
           background-image: url("https://m.media-amazon.com/images/I/71WffRxu65L._AC_UF894,1000_QL80_.jpg");
-          background-size: cover;
         }
 
         #soil {
           background-image: url("https://joegardener.com/wp-content/uploads/2022/11/2021-07-15-15.10.52-708X466.jpg");
-          background-size: cover;
         }
 
         #nutrients {
           background-image: url("https://hydrobuilder.com/wp/wp-content/uploads/Best_Plant_Nutrients.png");
-          background-size: cover;
         }
 
         #pesticides {
           background-image: url("https://water.unl.edu/images/news/Pesticides%2C_S._Browning%2C_resized.JPG");
-          background-size: cover;
+        }
+
+        #volver {
+          background-image: url(https://static.eldiario.es/clip/2b5c10f8-c188-4394-af4c-d02dde8e800b_16-9-discover-aspect-ratio_default_0.jpg);
         }
       }
 
