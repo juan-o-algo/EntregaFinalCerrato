@@ -38,7 +38,7 @@ body {
 
     .encabezado {
       background-color: $verdeVerdito;
-      color: #40492b;
+      color: $negroGuido;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -173,7 +173,7 @@ body {
       flex-direction: row-reverse;
       align-items: flex-start;
       justify-content: flex-end;
-      background-color: #F3FFED;
+      background-color: $blancoBlancoso;
       width: 100%;
       min-height: 80vh;
       height: 90vh;
@@ -188,7 +188,7 @@ body {
       }
 
       #buscadorPorCategoria {
-        background-color: #50AA34;
+        background-color: $verdeVerdoso;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -198,7 +198,7 @@ body {
         min-width: 250px;
         margin-top: 25px;
         margin: 20px 20px;
-        border: 20px solid #B0DF9A;
+        border: 20px solid $verdeVerdito;
 
         @include media-query {
           display: none !important;
@@ -240,7 +240,7 @@ body {
         .cuadroDelTitulo {
           height: 60px;
           width: 570px;
-          background-color: #B0DF9A;
+          background-color: $verdeVerdito;
           display: flex;
           align-items: center;
           flex-direction: row;
@@ -266,6 +266,7 @@ body {
           display: flex;
           flex-direction: row;
           justify-content: space-evenly;
+          gap: 40px;
           margin-bottom: 40px;
           height: 250px;
           width: 100%;
@@ -331,7 +332,7 @@ body {
         }
 
         .categoria {
-          color: #fff;
+          color: $blancoBlancoso;
           display: flex;
           flex-direction: column;
           text-align: center;
@@ -356,7 +357,7 @@ body {
 
 
         .producto {
-          border: 3px solid #B0DF9A;
+          border: 3px solid $verdeVerdito;
           border-radius: 8px;
           height: 256px;
           width: 350px;
@@ -374,6 +375,10 @@ body {
 
         #seeds {
           background-image: url("https://m.media-amazon.com/images/I/81Bhhy3-jVL._AC_UF894,1000_QL80_.jpg");
+
+          @include media-query{
+            margin-top: 40px;
+          }
         }
 
         #tools {
@@ -382,10 +387,16 @@ body {
 
         #pots {
           background-image: url("https://m.media-amazon.com/images/I/71WffRxu65L._AC_UF894,1000_QL80_.jpg");
+          @include media-query{
+            margin-top: 40px;
+          }
         }
 
         #soil {
           background-image: url("https://joegardener.com/wp-content/uploads/2022/11/2021-07-15-15.10.52-708X466.jpg");
+          @include media-query{
+            margin-top: 40px;
+          }
         }
 
         #nutrients {
@@ -402,7 +413,7 @@ body {
       }
 
       #carritoYCheckout {
-        background-color: #DFF2D6;
+        background-color: $verdeGuido;
         height: 550px;
         width: 650px;
         display: flex;
@@ -431,10 +442,10 @@ body {
           justify-self: center;
 
           #botonCheckout {
-            background-color: #50AA34;
+            background-color: $verdeVerdoso;
             height: 50px;
             width: 170px;
-            border: 3px solid #F3FFED;
+            border: 3px solid $verdeGuido;
             border-radius: 8px;
             display: flex;
             justify-content: center;
@@ -444,7 +455,7 @@ body {
       }
 
       #formularioObligatorio {
-        background-color: #DFF2D6;
+        background-color: $verdeGuido;
         height: 550px;
         width: 650px;
         display: flex;

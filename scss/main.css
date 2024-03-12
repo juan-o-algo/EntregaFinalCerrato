@@ -181,7 +181,7 @@ body main #contenedorPrincipal {
   flex-direction: row-reverse;
   align-items: flex-start;
   justify-content: flex-end;
-  background-color: #F3FFED;
+  background-color: white;
   width: 100%;
   min-height: 80vh;
   height: 90vh;
@@ -272,6 +272,7 @@ body main #contenedorPrincipal .cuadritoYContenido .cuadrito {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  gap: 40px;
   margin-bottom: 40px;
   height: 250px;
   width: 100%;
@@ -335,7 +336,7 @@ body main #contenedorPrincipal .cuadritoYContenido .textoPues {
   }
 }
 body main #contenedorPrincipal .cuadritoYContenido .categoria {
-  color: #fff;
+  color: white;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -373,14 +374,29 @@ body main #contenedorPrincipal .cuadritoYContenido .producto a {
 body main #contenedorPrincipal .cuadritoYContenido #seeds {
   background-image: url("https://m.media-amazon.com/images/I/81Bhhy3-jVL._AC_UF894,1000_QL80_.jpg");
 }
+@media (max-width: 1024px) {
+  body main #contenedorPrincipal .cuadritoYContenido #seeds {
+    margin-top: 40px;
+  }
+}
 body main #contenedorPrincipal .cuadritoYContenido #tools {
   background-image: url("https://cdn.mos.cms.futurecdn.net/Rx63edvSZCZ9uSg7egSDRU.jpg");
 }
 body main #contenedorPrincipal .cuadritoYContenido #pots {
   background-image: url("https://m.media-amazon.com/images/I/71WffRxu65L._AC_UF894,1000_QL80_.jpg");
 }
+@media (max-width: 1024px) {
+  body main #contenedorPrincipal .cuadritoYContenido #pots {
+    margin-top: 40px;
+  }
+}
 body main #contenedorPrincipal .cuadritoYContenido #soil {
   background-image: url("https://joegardener.com/wp-content/uploads/2022/11/2021-07-15-15.10.52-708X466.jpg");
+}
+@media (max-width: 1024px) {
+  body main #contenedorPrincipal .cuadritoYContenido #soil {
+    margin-top: 40px;
+  }
 }
 body main #contenedorPrincipal .cuadritoYContenido #nutrients {
   background-image: url("https://hydrobuilder.com/wp/wp-content/uploads/Best_Plant_Nutrients.png");
@@ -425,7 +441,7 @@ body main #contenedorPrincipal #carritoYCheckout #checkout #botonCheckout {
   background-color: #50AA34;
   height: 50px;
   width: 170px;
-  border: 3px solid #F3FFED;
+  border: 3px solid #DFF2D6;
   border-radius: 8px;
   display: flex;
   justify-content: center;
