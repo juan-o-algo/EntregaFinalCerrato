@@ -181,7 +181,9 @@ body main #contenedorPrincipal {
   flex-direction: row-reverse;
   align-items: flex-start;
   justify-content: flex-end;
-  background-color: white;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/019/587/033/large_2x/defocused-bokeh-and-blur-background-of-garden-trees-in-sunlight-with-vintage-toned-free-photo.jpg);
+  background-size: cover;
+  background-position: center;
   width: 100%;
   min-height: 80vh;
   height: 90vh;
@@ -292,11 +294,6 @@ body main #contenedorPrincipal .cuadritoYContenido .cuadrito {
 body main #contenedorPrincipal .cuadritoYContenido .cuadritoConOops {
   height: auto;
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal .cuadritoYContenido .video-container {
-    width: 100vw;
-  }
-}
 body main #contenedorPrincipal .cuadritoYContenido #videito {
   width: 800px;
   height: 500px;
@@ -307,7 +304,7 @@ body main #contenedorPrincipal .cuadritoYContenido #videito {
   body main #contenedorPrincipal .cuadritoYContenido #videito {
     width: 100%;
     height: 100%;
-    margin-top: unset;
+    margin-top: 40px;
   }
 }
 body main #contenedorPrincipal .cuadritoYContenido .fotuki {
@@ -320,6 +317,7 @@ body main #contenedorPrincipal .cuadritoYContenido .fotuki {
 @media (max-width: 1024px) {
   body main #contenedorPrincipal .cuadritoYContenido .fotuki {
     width: 90vw;
+    height: auto;
     margin-top: 16px;
     margin-bottom: 16px;
   }
@@ -387,7 +385,7 @@ body main #contenedorPrincipal .cuadritoYContenido #pots {
 }
 @media (max-width: 1024px) {
   body main #contenedorPrincipal .cuadritoYContenido #pots {
-    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 body main #contenedorPrincipal .cuadritoYContenido #soil {
@@ -419,6 +417,7 @@ body main #contenedorPrincipal #carritoYCheckout {
 @media (max-width: 1024px) {
   body main #contenedorPrincipal #carritoYCheckout {
     width: 100vw;
+    margin-top: 40px;
   }
 }
 body main #contenedorPrincipal #carritoYCheckout #carrito {
@@ -447,6 +446,10 @@ body main #contenedorPrincipal #carritoYCheckout #checkout #botonCheckout {
   justify-content: center;
   align-items: center;
 }
+body main #contenedorPrincipal #carritoYCheckout #checkout #botonCheckout:active {
+  transform: scale(0.8, 0.8);
+  transition: all 0.1s ease;
+}
 body main #contenedorPrincipal #formularioObligatorio {
   background-color: #DFF2D6;
   height: 550px;
@@ -460,6 +463,7 @@ body main #contenedorPrincipal #formularioObligatorio {
 @media (max-width: 1024px) {
   body main #contenedorPrincipal #formularioObligatorio {
     width: 100vw;
+    margin-top: 40px;
   }
 }
 body main #contenedorPrincipal #formularioObligatorio #mensajito {
@@ -488,6 +492,10 @@ body main #contenedorPrincipal #formularioObligatorio #botonMensaje {
   color: #F3FFED;
   font-family: "Titillium Web", sans-serif;
   font-size: large;
+}
+body main #contenedorPrincipal #formularioObligatorio #botonMensaje:active {
+  transform: scale(0.8, 0.8);
+  transition: all 0.1s ease;
 }
 
 footer {
