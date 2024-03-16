@@ -37,26 +37,27 @@ body {
   grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
   width: 100%;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1348px) {
   body {
     grid-template-columns: 100%;
     grid-template-rows: 1fr auto 40px;
     grid-template-areas: "header" "main" "footer";
   }
 }
-body header {
+
+header {
   grid-area: header;
   height: 100%;
   width: 100%;
 }
-@media (max-width: 1024px) {
-  body header {
+@media (max-width: 1348px) {
+  header {
     width: auto;
     display: flex;
     align-items: center;
   }
 }
-body header .encabezado {
+header .encabezado {
   background-color: #B0DF9A;
   color: #40492b;
   width: 100%;
@@ -67,8 +68,8 @@ body header .encabezado {
   text-align: center;
   height: 150px;
 }
-@media (max-width: 1024px) {
-  body header .encabezado {
+@media (max-width: 1348px) {
+  header .encabezado {
     justify-content: space-between;
     align-items: flex-end;
     flex-direction: row;
@@ -79,46 +80,48 @@ body header .encabezado {
     margin-right: unset;
   }
 }
-body header .encabezado #iconoYMenu {
+header .encabezado #iconoYMenu {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-body header .encabezado #iconoYMenu #logo {
+header .encabezado #iconoYMenu #logo {
   height: 70px;
   width: 70px;
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 70px;
 }
-@media (max-width: 1024px) {
-  body header .encabezado #iconoYMenu #logo {
+@media (max-width: 1348px) {
+  header .encabezado #iconoYMenu #logo {
     height: 70px;
     width: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     margin-left: 10px;
     margin-top: 20px;
   }
 }
-body header .encabezado #iconoYMenu .dropdown {
+header .encabezado .dropstart {
   display: none;
 }
-@media (max-width: 1024px) {
-  body header .encabezado #iconoYMenu .dropdown {
+@media (max-width: 1348px) {
+  header .encabezado .dropstart {
     display: unset;
-    margin-bottom: 20px;
     height: auto;
     overflow: visible;
+    position: absolute;
+    margin-left: 85vw;
+    margin-bottom: 10px;
   }
 }
-body header .encabezado #iconoYMenu .dropdown .btn {
+header .encabezado .dropstart .btn {
   background-color: #50AA34;
   border-color: white;
 }
-body header .encabezado #iconoYMenu .dropdown .dropdown-menu {
+header .encabezado .dropstart .dropdown-menu {
   background-color: #50AA34;
 }
-body header .encabezado #iconoYMenu .dropdown .dropdown-item {
+header .encabezado .dropstart .dropdown-item {
   overflow: visible;
   color: #F3FFED;
   background-color: #50AA34;
@@ -128,18 +131,18 @@ body header .encabezado #iconoYMenu .dropdown .dropdown-item {
   justify-content: center;
   align-items: center;
 }
-body header .encabezado nav .botones {
+header .encabezado nav .botones {
   display: flex;
   flex-direction: row;
   height: 50px;
   margin-bottom: 20px;
 }
-@media (max-width: 1024px) {
-  body header .encabezado nav .botones {
+@media (max-width: 1348px) {
+  header .encabezado nav .botones {
     display: none;
   }
 }
-body header .encabezado nav .botones .boton {
+header .encabezado nav .botones .boton {
   background-color: #50AA34;
   height: 50px;
   width: 170px;
@@ -149,7 +152,7 @@ body header .encabezado nav .botones .boton {
   align-items: center;
   justify-content: center;
 }
-body header .encabezado #login {
+header .encabezado #login {
   font-family: "Titillium Web", sans-serif;
   font-size: small;
   display: flex;
@@ -160,23 +163,29 @@ body header .encabezado #login {
   margin-bottom: 45px;
   margin-right: 20px;
 }
-body header .encabezado #login #credenciales {
+@media (max-width: 1348px) {
+  header .encabezado #login {
+    display: none;
+  }
+}
+header .encabezado #login #credenciales {
   display: flex;
   flex-direction: column;
 }
-body main {
+
+main {
   grid-area: main;
   height: 90vh;
   width: 100%;
 }
-@media (max-width: 1024px) {
-  body main {
+@media (max-width: 1348px) {
+  main {
     margin: unset;
     width: auto;
     height: auto;
   }
 }
-body main #contenedorPrincipal {
+main #contenedorPrincipal {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
@@ -188,8 +197,8 @@ body main #contenedorPrincipal {
   min-height: 80vh;
   height: 90vh;
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal {
     margin: unset;
     width: 100%;
     height: 100%;
@@ -198,7 +207,10 @@ body main #contenedorPrincipal {
     height: auto;
   }
 }
-body main #contenedorPrincipal #buscadorPorCategoria {
+main #contenedorPrincipal #contenedorNavLateral {
+  width: 100%;
+}
+main #contenedorPrincipal #buscadorPorCategoria {
   background-color: #50AA34;
   display: flex;
   flex-direction: column;
@@ -206,32 +218,32 @@ body main #contenedorPrincipal #buscadorPorCategoria {
   align-items: center;
   height: auto;
   width: auto;
-  min-width: 250px;
+  min-width: 370px;
   margin-top: 25px;
-  margin: 20px 20px;
+  margin-left: 20px;
   border: 20px solid #B0DF9A;
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal #buscadorPorCategoria {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal #buscadorPorCategoria {
     display: none !important;
   }
 }
-body main #contenedorPrincipal #buscadorPorCategoria #buscador {
+main #contenedorPrincipal #buscadorPorCategoria #buscador {
   margin-top: 30px;
 }
-body main #contenedorPrincipal #buscadorPorCategoria .botonesNavLateral {
+main #contenedorPrincipal #buscadorPorCategoria .botonesNavLateral {
   margin-top: 15px;
   margin-right: 30px;
   list-style-type: none;
 }
-body main #contenedorPrincipal .cuadritoYContenido {
+main #contenedorPrincipal .cuadritoYContenido {
   display: flex;
   flex-direction: column-reverse;
   width: auto;
   margin-left: 20px;
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal .cuadritoYContenido {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal .cuadritoYContenido {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -240,13 +252,13 @@ body main #contenedorPrincipal .cuadritoYContenido {
     margin: unset;
   }
 }
-body main #contenedorPrincipal .cuadritoYContenido #contenido {
+main #contenedorPrincipal .cuadritoYContenido #contenido {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-body main #contenedorPrincipal .cuadritoYContenido .cuadroDelTitulo {
+main #contenedorPrincipal .cuadritoYContenido .cuadroDelTitulo {
   height: 60px;
   width: 570px;
   background-color: #B0DF9A;
@@ -256,8 +268,8 @@ body main #contenedorPrincipal .cuadritoYContenido .cuadroDelTitulo {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal .cuadritoYContenido .cuadroDelTitulo {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal .cuadritoYContenido .cuadroDelTitulo {
     height: 60px;
     width: 100%;
     background-color: #B0DF9A;
@@ -270,7 +282,7 @@ body main #contenedorPrincipal .cuadritoYContenido .cuadroDelTitulo {
     overflow: visible;
   }
 }
-body main #contenedorPrincipal .cuadritoYContenido .cuadrito {
+main #contenedorPrincipal .cuadritoYContenido .cuadrito {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -279,8 +291,8 @@ body main #contenedorPrincipal .cuadritoYContenido .cuadrito {
   height: 250px;
   width: 100%;
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal .cuadritoYContenido .cuadrito {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal .cuadritoYContenido .cuadrito {
     flex-direction: column;
     height: auto;
     justify-content: center;
@@ -291,49 +303,49 @@ body main #contenedorPrincipal .cuadritoYContenido .cuadrito {
     margin-bottom: unset;
   }
 }
-body main #contenedorPrincipal .cuadritoYContenido .cuadritoConOops {
+main #contenedorPrincipal .cuadritoYContenido .cuadritoConOops {
   height: auto;
 }
-body main #contenedorPrincipal .cuadritoYContenido #videito {
+main #contenedorPrincipal .cuadritoYContenido #videito {
   width: 800px;
   height: 500px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal .cuadritoYContenido #videito {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal .cuadritoYContenido #videito {
     width: 100%;
-    height: 100%;
+    height: 60vh;
     margin-top: 40px;
   }
 }
-body main #contenedorPrincipal .cuadritoYContenido .fotuki {
+main #contenedorPrincipal .cuadritoYContenido .fotuki {
   height: 250px;
   width: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal .cuadritoYContenido .fotuki {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal .cuadritoYContenido .fotuki {
     width: 90vw;
     height: auto;
     margin-top: 16px;
     margin-bottom: 16px;
   }
 }
-body main #contenedorPrincipal .cuadritoYContenido .textoPues {
-  height: auto;
-  width: 400px;
+main #contenedorPrincipal .cuadritoYContenido .textoPues {
+  width: 30%;
+  max-height: 350px;
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal .cuadritoYContenido .textoPues {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal .cuadritoYContenido .textoPues {
     height: auto;
     width: 90vw;
     margin-top: 16px;
   }
 }
-body main #contenedorPrincipal .cuadritoYContenido .categoria {
+main #contenedorPrincipal .cuadritoYContenido .categoria {
   color: white;
   display: flex;
   flex-direction: column;
@@ -347,14 +359,14 @@ body main #contenedorPrincipal .cuadritoYContenido .categoria {
   margin-bottom: 0px;
   transition: all 0.5s ease;
 }
-body main #contenedorPrincipal .cuadritoYContenido .categoria:hover {
+main #contenedorPrincipal .cuadritoYContenido .categoria:hover {
   transform: scale(1.5, 1.5);
 }
-body main #contenedorPrincipal .cuadritoYContenido .categoria:active {
+main #contenedorPrincipal .cuadritoYContenido .categoria:active {
   transform: scale(0.5, 0.5);
   transition: all 0.1s ease;
 }
-body main #contenedorPrincipal .cuadritoYContenido .producto {
+main #contenedorPrincipal .cuadritoYContenido .producto {
   border: 3px solid #B0DF9A;
   border-radius: 8px;
   height: 256px;
@@ -364,48 +376,48 @@ body main #contenedorPrincipal .cuadritoYContenido .producto {
   justify-content: center;
   background-size: cover;
 }
-body main #contenedorPrincipal .cuadritoYContenido .producto a {
+main #contenedorPrincipal .cuadritoYContenido .producto a {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body main #contenedorPrincipal .cuadritoYContenido #seeds {
+main #contenedorPrincipal .cuadritoYContenido #seeds {
   background-image: url("https://m.media-amazon.com/images/I/81Bhhy3-jVL._AC_UF894,1000_QL80_.jpg");
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal .cuadritoYContenido #seeds {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal .cuadritoYContenido #seeds {
     margin-top: 40px;
   }
 }
-body main #contenedorPrincipal .cuadritoYContenido #tools {
+main #contenedorPrincipal .cuadritoYContenido #tools {
   background-image: url("https://cdn.mos.cms.futurecdn.net/Rx63edvSZCZ9uSg7egSDRU.jpg");
 }
-body main #contenedorPrincipal .cuadritoYContenido #pots {
+main #contenedorPrincipal .cuadritoYContenido #pots {
   background-image: url("https://m.media-amazon.com/images/I/71WffRxu65L._AC_UF894,1000_QL80_.jpg");
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal .cuadritoYContenido #pots {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal .cuadritoYContenido #pots {
     margin-bottom: 40px;
   }
 }
-body main #contenedorPrincipal .cuadritoYContenido #soil {
+main #contenedorPrincipal .cuadritoYContenido #soil {
   background-image: url("https://joegardener.com/wp-content/uploads/2022/11/2021-07-15-15.10.52-708X466.jpg");
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal .cuadritoYContenido #soil {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal .cuadritoYContenido #soil {
     margin-top: 40px;
   }
 }
-body main #contenedorPrincipal .cuadritoYContenido #nutrients {
+main #contenedorPrincipal .cuadritoYContenido #nutrients {
   background-image: url("https://hydrobuilder.com/wp/wp-content/uploads/Best_Plant_Nutrients.png");
 }
-body main #contenedorPrincipal .cuadritoYContenido #pesticides {
+main #contenedorPrincipal .cuadritoYContenido #pesticides {
   background-image: url("https://water.unl.edu/images/news/Pesticides%2C_S._Browning%2C_resized.JPG");
 }
-body main #contenedorPrincipal .cuadritoYContenido #volver {
+main #contenedorPrincipal .cuadritoYContenido #volver {
   background-image: url(https://static.eldiario.es/clip/2b5c10f8-c188-4394-af4c-d02dde8e800b_16-9-discover-aspect-ratio_default_0.jpg);
 }
-body main #contenedorPrincipal #carritoYCheckout {
+main #contenedorPrincipal #carritoYCheckout {
   background-color: #DFF2D6;
   height: 550px;
   width: 650px;
@@ -414,29 +426,29 @@ body main #contenedorPrincipal #carritoYCheckout {
   align-items: center;
   justify-content: space-around;
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal #carritoYCheckout {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal #carritoYCheckout {
     width: 100vw;
     margin-top: 40px;
   }
 }
-body main #contenedorPrincipal #carritoYCheckout #carrito {
+main #contenedorPrincipal #carritoYCheckout #carrito {
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal #carritoYCheckout #carrito {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal #carritoYCheckout #carrito {
     width: 100vw;
   }
 }
-body main #contenedorPrincipal #carritoYCheckout #checkout {
+main #contenedorPrincipal #carritoYCheckout #checkout {
   display: flex;
   flex-direction: row;
   justify-self: center;
 }
-body main #contenedorPrincipal #carritoYCheckout #checkout #botonCheckout {
+main #contenedorPrincipal #carritoYCheckout #checkout #botonCheckout {
   background-color: #50AA34;
   height: 50px;
   width: 170px;
@@ -446,11 +458,11 @@ body main #contenedorPrincipal #carritoYCheckout #checkout #botonCheckout {
   justify-content: center;
   align-items: center;
 }
-body main #contenedorPrincipal #carritoYCheckout #checkout #botonCheckout:active {
+main #contenedorPrincipal #carritoYCheckout #checkout #botonCheckout:active {
   transform: scale(0.8, 0.8);
   transition: all 0.1s ease;
 }
-body main #contenedorPrincipal #formularioObligatorio {
+main #contenedorPrincipal #formularioObligatorio {
   background-color: #DFF2D6;
   height: 550px;
   width: 650px;
@@ -460,27 +472,27 @@ body main #contenedorPrincipal #formularioObligatorio {
   justify-content: stretch;
   justify-content: space-around;
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal #formularioObligatorio {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal #formularioObligatorio {
     width: 100vw;
     margin-top: 40px;
   }
 }
-body main #contenedorPrincipal #formularioObligatorio #mensajito {
+main #contenedorPrincipal #formularioObligatorio #mensajito {
   height: 400px;
   width: 600px;
   font-family: "Titillium Web", sans-serif;
 }
-@media (max-width: 1024px) {
-  body main #contenedorPrincipal #formularioObligatorio #mensajito {
+@media (max-width: 1348px) {
+  main #contenedorPrincipal #formularioObligatorio #mensajito {
     width: 100vw;
   }
 }
-body main #contenedorPrincipal #formularioObligatorio #email {
+main #contenedorPrincipal #formularioObligatorio #email {
   width: 400px;
   font-family: "Titillium Web", sans-serif;
 }
-body main #contenedorPrincipal #formularioObligatorio #botonMensaje {
+main #contenedorPrincipal #formularioObligatorio #botonMensaje {
   background-color: #50AA34;
   height: 50px;
   width: 170px;
@@ -493,7 +505,7 @@ body main #contenedorPrincipal #formularioObligatorio #botonMensaje {
   font-family: "Titillium Web", sans-serif;
   font-size: large;
 }
-body main #contenedorPrincipal #formularioObligatorio #botonMensaje:active {
+main #contenedorPrincipal #formularioObligatorio #botonMensaje:active {
   transform: scale(0.8, 0.8);
   transition: all 0.1s ease;
 }

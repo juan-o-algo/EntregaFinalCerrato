@@ -1,0 +1,138 @@
+header {
+    grid-area: header;
+    height: 100%;
+    width: 100%;
+
+    @include media-query {
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .encabezado {
+        background-color: $verdeVerdito;
+        color: $negroGuido;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+        text-align: center;
+        height: 150px;
+
+        @include media-query {
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-direction: row;
+            text-align: center;
+            flex-wrap: nowrap;
+            margin: unset;
+            padding: unset;
+            margin-right: unset;
+        }
+
+        #iconoYMenu {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            #logo {
+                height: 70px;
+                width: 70px;
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-bottom: 70px;
+
+                @include media-query {
+                    height: 70px;
+                    width: 70px;
+                    margin-bottom: 70px;
+                    margin-left: 10px;
+                    margin-top: 20px;
+
+                }
+            }
+
+        }
+
+        .dropstart {
+            display: none;
+
+            @include media-query {
+                display: unset;
+                height: auto;
+                overflow: visible;
+                position: absolute;
+                margin-left: 85vw;
+                margin-bottom: 10px;
+
+            }
+
+            .btn {
+                background-color: $verdeVerdoso;
+                border-color: $blancoBlancoso;
+            }
+
+            .dropdown-menu {
+                background-color: $verdeVerdoso;
+            }
+
+            .dropdown-item {
+                overflow: visible;
+                color: $blancoGuido;
+                background-color: $verdeVerdoso;
+                font-size: larger;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        nav {
+            .botones {
+                display: flex;
+                flex-direction: row;
+                height: 50px;
+                margin-bottom: 20px;
+
+                @include media-query {
+                    display: none;
+                }
+
+                .boton {
+                    background-color: $verdeVerdoso;
+                    height: 50px;
+                    width: 170px;
+                    border: 1px solid $verdeGuido;
+                    margin: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        #login {
+            font-family: 'Titillium Web', sans-serif;
+            font-size: small;
+            display: flex;
+            order: 3;
+            align-items: flex-start;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 45px;
+            margin-right: 20px;
+
+            @include media-query {
+                display: none;
+            }
+
+
+            #credenciales {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
