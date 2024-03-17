@@ -30,9 +30,6 @@ main {
             height: auto;
         }
 
-        #contenedorNavLateral {
-            width: 100%;
-        }
 
         #buscadorPorCategoria {
             background-color: $verdeVerdoso;
@@ -41,8 +38,8 @@ main {
             justify-content: space-evenly;
             align-items: center;
             height: auto;
-            width: auto;
-            min-width: 370px;
+            width: 25vw;
+
             margin-top: 25px;
             margin-left: 20px;
             border: 20px solid $verdeVerdito;
@@ -65,7 +62,7 @@ main {
         .cuadritoYContenido {
             display: flex;
             flex-direction: column-reverse;
-            width: auto;
+            width: 70vw;
             margin-left: 20px;
 
             @include media-query {
@@ -265,7 +262,7 @@ main {
             justify-content: space-around;
 
             @include media-query {
-                width: 100vw;
+                width: 90vw;
                 margin-top: 40px;
             }
 
@@ -276,7 +273,7 @@ main {
                 justify-content: space-around;
 
                 @include media-query {
-                    width: 100vw;
+                    width: 80vw;
                 }
             }
 
@@ -305,7 +302,7 @@ main {
 
         #formularioObligatorio {
             background-color: $verdeGuido;
-            height: 550px;
+            height: 650px;
             width: 650px;
             display: flex;
             flex-direction: column;
@@ -314,8 +311,16 @@ main {
             justify-content: space-around;
 
             @include media-query {
-                width: 100vw;
+                width: 90vw;
                 margin-top: 40px;
+            }
+
+            #telefono {
+                width: 300px;
+
+                @include media-query {
+                    width: 50vw;
+                }
             }
 
 
@@ -325,13 +330,35 @@ main {
                 font-family: 'Titillium Web', sans-serif;
 
                 @include media-query {
-                    width: 100vw;
+                    width: 80vw;
                 }
             }
 
             #email {
                 width: 400px;
                 font-family: 'Titillium Web', sans-serif;
+
+                @include media-query {
+                    width: 60vw;
+                }
+            }
+
+            #suscripcion {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                input {
+                    margin-left: 20px;
+                }
+
+                p {
+                    margin-bottom: unset;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
             }
 
             #botonMensaje {
