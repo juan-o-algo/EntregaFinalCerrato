@@ -178,7 +178,7 @@ main {
   grid-area: main;
   height: 90vh;
   width: 100%;
-  min-height: 740px;
+  min-height: 820px;
 }
 @media (max-width: 1348px) {
   main {
@@ -197,7 +197,7 @@ main #contenedorPrincipal {
   background-position: center;
   width: 100%;
   height: 90vh;
-  min-height: 740px;
+  min-height: 820px;
 }
 @media (max-width: 1348px) {
   main #contenedorPrincipal {
