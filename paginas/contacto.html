@@ -37,6 +37,7 @@
                     <li><a class="dropdown-item" href="./productos.html">Productos</a></li>
                     <li><a class="dropdown-item" href="./carrito.html">Carrito</a></li>
                     <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                    <li><a class="dropdown-item" href="./login.html">Iniciar sesion</a></li>
                 </ul>
             </div>
             <div id="login">
@@ -44,7 +45,7 @@
                     <div><input class="acaLePonesCosas" type="text" placeholder="Usuario"></div>
                     <div><input class="acaLePonesCosas" type="password" placeholder="Contraseña"></div>
                 </div>
-                <div><input class="acaLePonesCosas" type="submit" value="Login"></div>
+                <div><input class="acaLePonesCosas" type="submit" value="Iniciar sesion"></div>
             </div>
             <nav>
                 <ul class="botones">
@@ -74,19 +75,29 @@
                 <div>
                     <form action="">
                         <div id="formularioObligatorio">
-                            <div>
-                                <input id="email" type="text" placeholder="Ingresa tu email aquí">
+                            <div class="itemFormulario">
+                                <p>Nombre: </p>
+                                <p id="asterisco">*</p>
+                                <input id="nombre" type="text" placeholder="Ingresa tu nombre y apellido" required>
                             </div>
-                            <div>
-                                <input id="telefono" type="tel" placeholder="Dános un teléfono de contacto">
+                            <div class="itemFormulario">
+                                <p>E-mail: </p>
+                                <p id="asterisco">*</p>
+                                <input id="email" type="text" placeholder="Ingresa tu email aquí" required>
+                            </div>
+                            <div class="itemFormulario">
+                                <p>Teléfono: </p>
+                                <p id="asterisco">*</p>
+                                <input id="telefono" type="tel" placeholder="Ingresa un teléfono de contacto" required>
                             </div>
                             <div>
                                 <textarea name="" id="mensajito" cols="30" rows="10"
                                     placeholder="Escribe tu mensaje aquí y nos contactaremos contigo a la brevedad :)"></textarea>
                             </div>
                             <div id="suscripcion">
-                                <input type="checkbox" id="suscribirse" value="1">
-                                <p>Suscribite para recibir ofertas todas las semanas</p>
+                                <input type="checkbox" id="terminos" value="1">
+                                <p id="asterisco">*</p>
+                                <p>Acepto que mis datos sean proporcionados a Gaia para contactarme</p>
                             </div>
                             <div>
                                 <input id="botonMensaje" type="submit">

@@ -249,6 +249,22 @@ main #contenedorPrincipal .cuadritoYContenido {
     margin: unset;
   }
 }
+main #contenedorPrincipal .cuadritoYContenido #contenedorLogin {
+  height: 200px;
+  width: 250px;
+  background-color: #DFF2D6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+@media (max-width: 1348px) {
+  main #contenedorPrincipal .cuadritoYContenido #contenedorLogin {
+    margin-left: unset;
+    margin-top: 50px;
+  }
+}
 main #contenedorPrincipal .cuadritoYContenido #contenido {
   height: 100%;
   width: 100%;
@@ -473,14 +489,37 @@ main #contenedorPrincipal #formularioObligatorio {
   main #contenedorPrincipal #formularioObligatorio {
     width: 90vw;
     margin-top: 40px;
+    margin-bottom: 20px;
   }
 }
+main #contenedorPrincipal #formularioObligatorio .itemFormulario {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: 50px;
+}
+main #contenedorPrincipal #formularioObligatorio .itemFormulario p {
+  margin: unset;
+}
+main #contenedorPrincipal #formularioObligatorio #asterisco {
+  color: red;
+}
 main #contenedorPrincipal #formularioObligatorio #telefono {
-  width: 300px;
+  width: 400px;
 }
 @media (max-width: 1348px) {
   main #contenedorPrincipal #formularioObligatorio #telefono {
-    width: 50vw;
+    width: 60vw;
+  }
+}
+main #contenedorPrincipal #formularioObligatorio #nombre {
+  width: 400px;
+  margin-left: 3px;
+}
+@media (max-width: 1348px) {
+  main #contenedorPrincipal #formularioObligatorio #nombre {
+    width: 60vw;
   }
 }
 main #contenedorPrincipal #formularioObligatorio #mensajito {
@@ -496,6 +535,7 @@ main #contenedorPrincipal #formularioObligatorio #mensajito {
 main #contenedorPrincipal #formularioObligatorio #email {
   width: 400px;
   font-family: "Titillium Web", sans-serif;
+  margin-left: 13px;
 }
 @media (max-width: 1348px) {
   main #contenedorPrincipal #formularioObligatorio #email {
