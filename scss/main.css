@@ -52,7 +52,7 @@ header {
 }
 @media (max-width: 1348px) {
   header {
-    width: auto;
+    width: 100%;
     display: flex;
     align-items: center;
   }
@@ -178,6 +178,7 @@ main {
   grid-area: main;
   height: 90vh;
   width: 100%;
+  min-height: 740px;
 }
 @media (max-width: 1348px) {
   main {
@@ -195,8 +196,8 @@ main #contenedorPrincipal {
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 80vh;
   height: 90vh;
+  min-height: 740px;
 }
 @media (max-width: 1348px) {
   main #contenedorPrincipal {

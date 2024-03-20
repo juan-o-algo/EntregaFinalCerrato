@@ -2,6 +2,7 @@ main {
     grid-area: main;
     height: 90vh;
     width: 100%;
+    min-height: 740px;
 
     @include media-query {
         margin: unset;
@@ -18,8 +19,8 @@ main {
         background-size: cover;
         background-position: center;
         width: 100%;
-        min-height: 80vh;
         height: 90vh;
+        min-height: 740px;
 
         @include media-query {
             margin: unset;
@@ -39,7 +40,6 @@ main {
             align-items: center;
             height: auto;
             width: 25vw;
-
             margin-top: 25px;
             margin-left: 20px;
             border: 20px solid $verdeVerdito;
